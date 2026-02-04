@@ -6,8 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       const matric = document.getElementById('matric').value.trim();
       if (matric) {
+        // Save matric number
         localStorage.setItem('matric', matric);
-        window.location.href = "home.html";
+
+        // Redirect to courses page
+        window.location.href = "home.html"; 
       } else {
         alert("Please enter your matric number!");
       }
