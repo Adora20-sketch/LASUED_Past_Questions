@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem('matric', matric);
 
         // Redirect to courses page
-        window.location.href = "home.html"; 
+        window.location.href = "home.html";
       } else {
         alert("Please enter your matric number!");
       }
