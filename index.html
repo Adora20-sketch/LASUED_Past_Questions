@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>LASUED Past Questions</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
-<script src="script.js"></script>
-
 <body>
+  <h1>Welcome to LASUED Past Questions</h1>
 
-<h1>LASUED Past Questions Portal</h1>
+  <div class="login-info">
+    <p>Logged in as: <span id="user"></span></p>
+  </div>
 
-<p>Department: <strong>Computer Science Education</strong></p>
+  <h2>Courses</h2>
 
-<p>Welcome, <span id="student"></span></p>
+  <div class="courses">
+    <a href="CSC201-200level.html"><button>CSC 201 – 200 Level</button></a>
+    <a href="CSC202-200level.html"><button>CSC 202 – 200 Level</button></a>
+    <a href="CSC301-300level.html"><button>CSC 301 – 300 Level</button></a>
+    <a href="CSC314-300level.html"><button>CSC 314 – Computer Architecture I (300 Level)</button></a>
+    <a href="CSC401-400level.html"><button>CSC 401 – 400 Level</button></a>
+  </div>
 
-<button onclick="logout()">Logout</button>
-
-<hr>
-
-<h3>Select Course</h3>
-</a>
-  <a href="CSC201-200level.html">
-  <button>CSC 201 – 200 Level</button>
-</a>
-
-<a href="CSC202-200level.html">
-  <button>CSC 202 – 200 Level</button>
-</a>
-
-<a href="CSC301-300level.html">
-  <button>CSC 301 – 300 Level</button>
-</a>
-
-<a href="CSC314-300level.html">
-  <button>CSC 314 – Computer Architecture I (300 Level)</button>
-</a>
-
-<a href="CSC401-400level.html">
-  <button>CSC 401 – 400 Level</button>
-</a>
-
-
+  <script src="script.js"></script>
+  <script>
+    // Display logged in matric number
+    document.getElementById('user').innerText = localStorage.getItem('matric') || "Guest";
+  </script>
 </body>
-
 </html>
