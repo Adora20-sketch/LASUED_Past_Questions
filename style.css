@@ -1,22 +1,55 @@
-/* General Body Styles */
+/* Body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #fff;
+    background: linear-gradient(135deg, #a8edea, #fed6e3); /* soft gradient */
+    color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center; /* headers and buttons centered, not text */
 }
 
 /* Headings */
-h1, h2, h3 {
-    color: #ffe600;
+h1 {
+    color: #2c3e50;
+    margin-top: 40px;
+    font-size: 28px;
+}
+h2 {
+    color: #34495e;
+    font-size: 22px;
     margin-bottom: 20px;
+}
+h3 {
+    color: #2980b9;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+    background-color: #ffffffcc; /* semi-transparent white */
+    padding: 30px 40px;
+    margin: 50px auto;
+    border-radius: 15px;
+    max-width: 400px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    text-align: center; /* inputs and buttons centered inside form */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 /* Buttons */
 button {
-    background-color: #ff6b6b;
+    background-color: #3498db;
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -26,44 +59,33 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
-
 button:hover {
-    background-color: #ff4757;
+    background-color: #2980b9;
     transform: scale(1.05);
 }
 
-/* Input Fields */
-input[type="text"], input[type="password"] {
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 10px;
-    border: none;
-    width: 80%;
-    font-size: 16px;
-}
-
-/* Forms */
-form {
-    background-color: rgba(0, 0, 0, 0.5);
+/* Courses Buttons (home.html) */
+.course-button {
     display: inline-block;
-    padding: 30px 50px;
-    margin-top: 50px;
-    border-radius: 15px;
+    width: 220px;
+    margin: 10px;
 }
 
-/* Lists */
+/* Lists - Questions */
 ul, ol {
-    text-align: left;
-    display: inline-block;
+    text-align: left; /* LEFT-ALIGNED QUESTIONS */
+    display: block;
     margin: 20px auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    background-color: #ffffffcc; /* semi-transparent white */
+    padding: 20px 25px;
     border-radius: 12px;
+    max-width: 600px;
 }
 
 li {
     margin: 10px 0;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Links */
@@ -74,14 +96,12 @@ a {
 /* Responsive */
 @media screen and (max-width: 600px) {
     input[type="text"], input[type="password"] {
-        width: 90%;
+        width: 95%;
     }
-    
     button {
         padding: 10px 20px;
         font-size: 14px;
     }
-    
     ul, ol {
         width: 90%;
         padding: 15px;
