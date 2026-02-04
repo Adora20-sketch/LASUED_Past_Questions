@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const matric = document.getElementById('matric').value.trim();
       if (matric) {
         localStorage.setItem('matric', matric);
-        window.location.href = "index.html";
+        window.location.href = "home.html";
       } else {
         alert("Please enter your matric number!");
       }
